@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "9e81e496-d8a2-4a6e-a25a-4b8338b1700d",
+		"name": "aspire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Tran Hai",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tranhaiares@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "tranhaiares@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/loans",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjA1ZDdkODg0ZTc1MDQzNzRmM2E1NzYwYTQxMzgxMmQyZDY2YjY2ZmNkMzA1MjA3ZTY0Zjg2YjkyMTUzODkyNjQ1MTgzMThiODM2ZjU0YmUiLCJpYXQiOjE2MjUzOTIyMTkuNTQ0OTUzLCJuYmYiOjE2MjUzOTIyMTkuNTQ0OTYzLCJleHAiOjE2NTY5MjgyMTkuNTM0NTg3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l3HzXFGnV5F4V39wuIYI19jnpeV1cGV86vfh4TvKT0NNc-6DZN5k50lUK-taXM-jDyhgKQhrTI2yPvssoCvlaQQnMpb8yaOoF3cx1tatl5ZcZlB_-OUPyDMxVwKwb2JSGX0nnAHzY3IYGglPLijFYULTaC0pouL_vcVhoKOA9ImQWgTMpK1ebj_rEasVvEkE-B1BaHsI0GvEa93x2cW_vHUbT31jdIO8N8Oj_SbQA96i-916kNHqbkKaNo0iMmamMFzXL_TjzGMwqD2qbGezuD5sU8kbwoBJ7GrbSz6RVjFiciv_5GO5Elt1J3stqK9xKwJZz-R_AjX2hrCw4jY5HVMVE9LCTbMiUAkNVUREiSuIDtq6IpdnEWfT0onIAtjmk_pYHs4hTUGIxstIr4P_ZHv1DuK7gq2CVrJsEe6TI3qU4DVUSt5fUkEZDclNklx9da9OTSKc4IiZBK_2_Fu69Y6jmgpYALI7NvlaR8SHMSu105xRiwHvTPL1Kq_9RgHtYH67_uJwRRnoN4A3XXuk3kWODu-oOPQLZ8pxYJO2TvDPdF3bGAQyQUtrbqccNup7zZwMNaX4yfjIG2eqNFvx629NPhUMO-qEHTpNbCNUrJjmUPMchz5BrEuGZMWVSKVkhjIEx8v2GIcMXR4Mlu2Nisy7Xt2M-HJJP0jRUhAOzww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/loans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/loans",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjA1ZDdkODg0ZTc1MDQzNzRmM2E1NzYwYTQxMzgxMmQyZDY2YjY2ZmNkMzA1MjA3ZTY0Zjg2YjkyMTUzODkyNjQ1MTgzMThiODM2ZjU0YmUiLCJpYXQiOjE2MjUzOTIyMTkuNTQ0OTUzLCJuYmYiOjE2MjUzOTIyMTkuNTQ0OTYzLCJleHAiOjE2NTY5MjgyMTkuNTM0NTg3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l3HzXFGnV5F4V39wuIYI19jnpeV1cGV86vfh4TvKT0NNc-6DZN5k50lUK-taXM-jDyhgKQhrTI2yPvssoCvlaQQnMpb8yaOoF3cx1tatl5ZcZlB_-OUPyDMxVwKwb2JSGX0nnAHzY3IYGglPLijFYULTaC0pouL_vcVhoKOA9ImQWgTMpK1ebj_rEasVvEkE-B1BaHsI0GvEa93x2cW_vHUbT31jdIO8N8Oj_SbQA96i-916kNHqbkKaNo0iMmamMFzXL_TjzGMwqD2qbGezuD5sU8kbwoBJ7GrbSz6RVjFiciv_5GO5Elt1J3stqK9xKwJZz-R_AjX2hrCw4jY5HVMVE9LCTbMiUAkNVUREiSuIDtq6IpdnEWfT0onIAtjmk_pYHs4hTUGIxstIr4P_ZHv1DuK7gq2CVrJsEe6TI3qU4DVUSt5fUkEZDclNklx9da9OTSKc4IiZBK_2_Fu69Y6jmgpYALI7NvlaR8SHMSu105xRiwHvTPL1Kq_9RgHtYH67_uJwRRnoN4A3XXuk3kWODu-oOPQLZ8pxYJO2TvDPdF3bGAQyQUtrbqccNup7zZwMNaX4yfjIG2eqNFvx629NPhUMO-qEHTpNbCNUrJjmUPMchz5BrEuGZMWVSKVkhjIEx8v2GIcMXR4Mlu2Nisy7Xt2M-HJJP0jRUhAOzww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "loans of tran ",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "6 months",
+							"type": "text"
+						},
+						{
+							"key": "repayment_frequency",
+							"value": "1 times",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "10",
+							"description": "unit: percent",
+							"type": "text"
+						},
+						{
+							"key": "arrangement_fee",
+							"value": "200000",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "0",
+							"description": "0: not paid, 1: paid",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/loans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/repayments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjA1ZDdkODg0ZTc1MDQzNzRmM2E1NzYwYTQxMzgxMmQyZDY2YjY2ZmNkMzA1MjA3ZTY0Zjg2YjkyMTUzODkyNjQ1MTgzMThiODM2ZjU0YmUiLCJpYXQiOjE2MjUzOTIyMTkuNTQ0OTUzLCJuYmYiOjE2MjUzOTIyMTkuNTQ0OTYzLCJleHAiOjE2NTY5MjgyMTkuNTM0NTg3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l3HzXFGnV5F4V39wuIYI19jnpeV1cGV86vfh4TvKT0NNc-6DZN5k50lUK-taXM-jDyhgKQhrTI2yPvssoCvlaQQnMpb8yaOoF3cx1tatl5ZcZlB_-OUPyDMxVwKwb2JSGX0nnAHzY3IYGglPLijFYULTaC0pouL_vcVhoKOA9ImQWgTMpK1ebj_rEasVvEkE-B1BaHsI0GvEa93x2cW_vHUbT31jdIO8N8Oj_SbQA96i-916kNHqbkKaNo0iMmamMFzXL_TjzGMwqD2qbGezuD5sU8kbwoBJ7GrbSz6RVjFiciv_5GO5Elt1J3stqK9xKwJZz-R_AjX2hrCw4jY5HVMVE9LCTbMiUAkNVUREiSuIDtq6IpdnEWfT0onIAtjmk_pYHs4hTUGIxstIr4P_ZHv1DuK7gq2CVrJsEe6TI3qU4DVUSt5fUkEZDclNklx9da9OTSKc4IiZBK_2_Fu69Y6jmgpYALI7NvlaR8SHMSu105xRiwHvTPL1Kq_9RgHtYH67_uJwRRnoN4A3XXuk3kWODu-oOPQLZ8pxYJO2TvDPdF3bGAQyQUtrbqccNup7zZwMNaX4yfjIG2eqNFvx629NPhUMO-qEHTpNbCNUrJjmUPMchz5BrEuGZMWVSKVkhjIEx8v2GIcMXR4Mlu2Nisy7Xt2M-HJJP0jRUhAOzww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/repayments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"repayments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/repayments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjA1ZDdkODg0ZTc1MDQzNzRmM2E1NzYwYTQxMzgxMmQyZDY2YjY2ZmNkMzA1MjA3ZTY0Zjg2YjkyMTUzODkyNjQ1MTgzMThiODM2ZjU0YmUiLCJpYXQiOjE2MjUzOTIyMTkuNTQ0OTUzLCJuYmYiOjE2MjUzOTIyMTkuNTQ0OTYzLCJleHAiOjE2NTY5MjgyMTkuNTM0NTg3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l3HzXFGnV5F4V39wuIYI19jnpeV1cGV86vfh4TvKT0NNc-6DZN5k50lUK-taXM-jDyhgKQhrTI2yPvssoCvlaQQnMpb8yaOoF3cx1tatl5ZcZlB_-OUPyDMxVwKwb2JSGX0nnAHzY3IYGglPLijFYULTaC0pouL_vcVhoKOA9ImQWgTMpK1ebj_rEasVvEkE-B1BaHsI0GvEa93x2cW_vHUbT31jdIO8N8Oj_SbQA96i-916kNHqbkKaNo0iMmamMFzXL_TjzGMwqD2qbGezuD5sU8kbwoBJ7GrbSz6RVjFiciv_5GO5Elt1J3stqK9xKwJZz-R_AjX2hrCw4jY5HVMVE9LCTbMiUAkNVUREiSuIDtq6IpdnEWfT0onIAtjmk_pYHs4hTUGIxstIr4P_ZHv1DuK7gq2CVrJsEe6TI3qU4DVUSt5fUkEZDclNklx9da9OTSKc4IiZBK_2_Fu69Y6jmgpYALI7NvlaR8SHMSu105xRiwHvTPL1Kq_9RgHtYH67_uJwRRnoN4A3XXuk3kWODu-oOPQLZ8pxYJO2TvDPdF3bGAQyQUtrbqccNup7zZwMNaX4yfjIG2eqNFvx629NPhUMO-qEHTpNbCNUrJjmUPMchz5BrEuGZMWVSKVkhjIEx8v2GIcMXR4Mlu2Nisy7Xt2M-HJJP0jRUhAOzww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/repayments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"repayments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
